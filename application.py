@@ -25,6 +25,7 @@ def predict_data():
             reading_score = float(request.form.get('reading_score')),
             writing_score = float(request.form.get('writing_score'))
         )
+        
         pred_df = data.get_data_as_data_frame()
         print(pred_df)
         predict_pipeline = PredictPipeline()
